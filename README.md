@@ -50,6 +50,10 @@ SELECT
 FROM
     social_media_usage;
 ```
+![output](https://github.com/user-attachments/assets/763cbca0-90b3-4d36-b74b-4338f58381eb)
+
+
+
 ## 2. Engagement Efficiency (Likes per Post)
 Calculating which platform has the most likes per post—a key indicator of platform engagement.
 ```
@@ -65,6 +69,10 @@ GROUP BY
 ORDER BY
     likes_per_post_ratio DESC;
 ```
+![output (1)](https://github.com/user-attachments/assets/3b84b4cc-6c67-426e-8165-af59bacbb523)
+
+
+
 ## 3. Highly Active Users by Platform
 Identifying the number of high-activity users for each platform.
 
@@ -82,6 +90,10 @@ GROUP BY
 ORDER BY
     highly_active_users DESC;
 ```
+![output (2)](https://github.com/user-attachments/assets/d4c1b157-c200-437a-ac98-aee843754f57)
+
+
+
 ## 4. Engagement Outliers Detection
 Identifying users with exceptionally high engagement metrics based on posts, likes, and follows per day.
 
@@ -118,6 +130,10 @@ WHERE
     OR 
     smu.follows_per_day > (stats.avg_follows + 2 * stats.stddev_follows);
 ```
+![output (3)](https://github.com/user-attachments/assets/a90d5203-9930-4832-9516-7be6aa38f652)
+
+
+
 ## 5. Retention Probability Estimation
 Estimating user retention likelihood based on high engagement factors.
 
@@ -134,6 +150,10 @@ SELECT
 FROM
     social_media_usage;
 ```
+![output (4)](https://github.com/user-attachments/assets/d0072c1f-b9a5-4eb6-882b-cd807aecd1ad)
+
+
+
 ## 6. Platform Popularity by User Cluster
 Analyzing platform popularity segmented by user cluster.
 
@@ -162,6 +182,10 @@ GROUP BY
 ORDER BY
     app, user_cluster DESC;
 ```
+![output (5)](https://github.com/user-attachments/assets/8a2e290c-84bf-4432-94f7-a62fcef77d7b)
+
+
+
 ## 7. Engagement Elasticity
 Calculating likes and follows per hour to understand how responsive users are to increased time spent.
 
@@ -178,6 +202,10 @@ GROUP BY
 ORDER BY
     likes_per_hour DESC, follows_per_hour DESC;
 ```
+![output (6)](https://github.com/user-attachments/assets/abab43cf-7dbd-4ca6-a08d-d4e7fd282121)
+
+
+
 # 📝 Conclusion
 This project reveals fascinating insights into social media engagement:
 
